@@ -77,15 +77,22 @@ header {
     }
 }
 
+.main:hover {
+    transition: 1s;
+}
+
 .main {
     width: 80%;
     height: auto;
     padding: 3%;
-    background: rgba(255, 255, 255, 0.377);
+    /* background: rgba(255, 255, 255, 0.377); */
+    background: black;
+    color: white;
     border: 2px solid white;
     margin-left: 10%;
     margin-top: 5%;
     border-radius: 20px;
+    transition: 1s;
 
     h1 {
         text-align: center;
@@ -116,7 +123,7 @@ header {
         border-radius: 20px;
         transition: 1s;
         cursor: pointer;
-        border: 2px solid white;
+        border: 2px solid black;
 
         a {
             width: 100%;
@@ -132,19 +139,20 @@ header {
         }
     }
 
-    .cart:hover {
+    .main-cart:hover {
         width: 10%;
         height: 120px;
         transition: 1s;
         border-radius: 10px;
         background: rgba(255, 255, 255, 0);
+        border: 2px solid white;
 
         a {
-            color: red;
+            color: white;
             transition: 1s;
         }
     }
-
+    
 }
 
 
