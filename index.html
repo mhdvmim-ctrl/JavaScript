@@ -163,9 +163,182 @@
             Xulosa qilib aytganda, JavaScript — web dasturlashning eng muhim va keng tarqalgan tillaridan biri bo‘lib,
             saytlarni “jonlantirish” uchun ishlatiladi.</p>
     </div>
-    <div class="main main1" id="m2"></div>
-    <div class="main main1" id="m3"></div>
-    <div class="main main1" id="m4"></div>
+    <div class="main main2" id="m2">
+        <h1>Modul Oyna</h1>
+        JavaScriptda modal oynalar (modal windows) — bu foydalanuvchining e’tiborini jalb qilish uchun chiqadigan maxsus
+        oynalar. Ular ochilganda, odatda, asosiy sahifa bilan ishlash vaqtincha to‘xtaydi. <br><br>
+
+        📌 Modal oynalar nima uchun kerak? <br>
+        Xabar ko‘rsatish <br>
+        Ogohlantirish berish <br>
+        Tasdiqlash (confirm) <br>
+        Foydalanuvchidan ma’lumot olish <br>
+        🧠 JavaScriptdagi asosiy modal oynalar <br>
+        1. alert() <br><br>
+
+        Oddiy xabar chiqaradi. <br><br>
+
+        Misol: <br>
+        alert("Salom!"); <br><br>
+
+        👉 Faqat “OK” tugmasi bo‘ladi. <br><br>
+
+        2. confirm() <br><br>
+
+        Foydalanuvchidan tasdiq so‘raydi. <br><br>
+
+        Misol: <br>
+        confirm("Rozimisiz?"); <br><br>
+
+        👉 “OK” va “Cancel” tugmalari bor <br>
+        👉 Natija: true yoki false <br><br>
+
+        3. prompt() <br><br>
+
+        Foydalanuvchidan ma’lumot kiritishni so‘raydi. <br><br>
+
+        Misol: <br>
+        prompt("Ismingizni kiriting:"); <br><br>
+
+        👉 Input (yozish joyi) chiqadi <br>
+        👉 Natija: kiritilgan matn <br><br>
+
+        ⚙️ Qanday ishlaydi? <br><br>
+
+        Bu oynalar brauzer tomonidan avtomatik chiqariladi va dizayni o‘zgarmaydi. Ular oddiy va tez ishlatish uchun
+        <br>
+        qulay, lekin zamonaviy saytlarda ko‘pincha o‘rniga custom (o‘zing yasagan) modal oynalar ishlatiladi. <br><br>
+
+        🚀 Xulosa <br><br>
+
+        Modal oynalar — foydalanuvchi bilan tez aloqa qilishning eng oddiy usuli. JavaScriptda alert, confirm va prompt
+        <br>
+        orqali oson ishlatiladi.
+    </div>
+    <div class="main main3" id="m3">
+        <h1>variableslar haqida</h1>
+        📌 Variables (o‘zgaruvchilar) nima? <br><br>
+
+        Variables (o‘zgaruvchilar) — bu JavaScriptda ma’lumotlarni saqlash uchun ishlatiladigan “quti”ga o‘xshaydi.
+        <br><br>
+
+        Ular ichida turli qiymatlar bo‘lishi mumkin: <br><br>
+
+        matn (text) <br>
+        son (number) <br>
+        true/false (boolean) <br>
+        va boshqa ma’lumotlar <br>
+        ⚙️ JavaScriptda variables yozish <br><br>
+
+        JavaScriptda o‘zgaruvchi 3 xil yo‘l bilan yaratiladi: <br><br>
+
+        1. let <br><br>
+
+        O‘zgaradigan qiymat uchun ishlatiladi. <br><br>
+
+        let ism = "Ali"; <br>
+        ism = "Vali";<br><br>
+
+        👉 qiymatni keyin o‘zgartirish mumkin <br><br>
+
+        2. const <br><br>
+
+        O‘zgarmaydigan qiymat uchun ishlatiladi. <br><br>
+
+        const yosh = 15; <br><br>
+
+        👉 keyin o‘zgartirib bo‘lmaydi <br><br>
+
+        3. var (eski usul)<br><br>
+
+        Eski JavaScript usuli, hozir kam ishlatiladi.<br><br>
+
+        var shahar = "Toshkent";<br><br>
+
+        🧠 Misollar<br><br>
+
+        let ism = "Ali";<br>
+        let yosh = 16;<br>
+        let boy = true;<br><br>
+
+        👉 Bu yerda:<br><br>
+
+        ism = matn<br>
+        yosh = son<br>
+        boy = true/false<br>
+        📌 Qayerda ishlatiladi?<br><br>
+
+        Variables JavaScriptda deyarli hamma joyda ishlatiladi:<br><br>
+
+        hisob-kitoblar<br>
+        foydalanuvchi ma’lumotlari<br>
+        o‘yinlar<br>
+        web saytlarv<br>
+        🚀 Xulosa<br>
+
+        Variables — bu JavaScriptning eng asosiy qismi. Ular ma’lumotlarni saqlash va boshqarish uchun ishlatiladi.
+    </div>
+    <div class="main main4" id="m4">
+        <h1>Operatorslar</h1>
+        📌 Operatorlar nima? <br><br>
+
+        Operatorlar — JavaScriptda qiymatlar ustida turli amallar bajarish uchun ishlatiladigan belgilar yoki
+        buyruqlar.<br><br>
+
+        Masalan: qo‘shish, ayirish, taqqoslash, mantiqiy tekshirish va boshqalar.<br><br>
+
+        ➕ 1. Arifmetik operatorlar (hisob-kitob)<br><br>
+
+        let a = 10;<br>
+        let b = 5;<br><br>
+
+        a + b → 15 (qo‘shish)<br>
+        a - b → 5 (ayirish)<br>
+        a * b → 50 (ko‘paytirish)<br>
+        a / b → 2 (bo‘lish)<br>
+        a % b → 0 (qoldiq)<br><br>
+
+        ⚖️ 2. Taqqoslash operatorlari (comparison)<br><br>
+
+        let a = 10;<br><br>
+
+        a == 10 → true (teng)<br>
+        a === 10 → true (qat’iy teng)<br>
+        a != 5 → true (teng emas)<br>
+        a > 5 → true (katta)<br>
+        a < 20 → true (kichik)<br>
+            a >= 10 → true (katta yoki teng)<br>
+            a <= 10 → true (kichik yoki teng)<br><br>
+
+                🧠 3. Mantiqiy operatorlar (logical)<br><br>
+
+                let a = true;<br>
+                let b = false;<br><br>
+
+                a && b → false (va / AND)<br>
+                a || b → true (yoki / OR)<br>
+                !a → false (inkor / NOT)<br><br>
+
+                🧾 4. Tayinlash operatorlari (assignment)<br><br>
+
+                let a = 10;<br><br>
+
+                a += 5 → 15 (a = a + 5)<br>
+                a -= 3 → 7<br>
+                a *= 2 → 20<br>
+                a /= 2 → 5<br>
+                a %= 3 → qoldiq<br><br>
+
+                🚀 Xulosa<br><br>
+
+                Operatorlar JavaScriptda:<br><br>
+
+                hisob-kitob qilish<br>
+                shartlarni tekshirish<br>
+                mantiqiy qarorlar qabul qilish<br><br>
+
+                uchun ishlatiladi.
+    </div>
     <div class="main main1" id="m5"></div>
     <div class="main main1" id="m6"></div>
     <div class="main main1" id="m7"></div>

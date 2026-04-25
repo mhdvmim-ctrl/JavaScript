@@ -141,6 +141,37 @@ header {
     }
 
 }
+.main1{
+    height: 400px;
+}
+
+.main2{
+    height: 1050px;
+}
+
+.main3{
+    height: 1250px;
+}
+.main4{
+    height: 1200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:450px) {
     .main {
@@ -170,4 +201,32 @@ header {
             margin-top: 0px;
         }
     }
+
+.main1{
+    height: 600px;
+}
+
+.main2{
+    height: 1150px;
+}
+
+.main3{
+    height: 1270px;
+}
+
+.main4{
+    height: 1200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
