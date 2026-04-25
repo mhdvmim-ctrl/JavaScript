@@ -146,25 +146,45 @@
     </div>
     <div class="main main1" id="m1">
         <h1>JavaScript Haqida</h1>
-        <p>JavaScript — bu web sahifalarni interaktiv va dinamik qiladigan dasturlash tili. U asosan brauzerda ishlaydi
-            va foydalanuvchi bilan to‘g‘ridan-to‘g‘ri aloqani ta’minlaydi. Masalan, tugma bosilganda amal bajarish,
-            formalarni tekshirish, animatsiyalar yaratish yoki sahifadagi ma’lumotlarni yangilash JavaScript orqali
-            amalga oshiriladi. <br><br>
+        📌 JavaScript nima? <br><br>
 
-            JavaScript dastlab faqat frontend uchun yaratilgan bo‘lsa ham, hozirda u server tomonda ham ishlatiladi.
-            Bunga Node.js misol bo‘la oladi. Shu sababli JavaScript bilan to‘liq web ilovalar yaratish mumkin. <br><br>
+        JavaScript — bu web saytlarni jonlantiradigan (interaktiv qiladigan) dasturlash tili.<br><br>
 
-            Bu til o‘zining soddaligi va keng imkoniyatlari bilan mashhur. JavaScriptda o‘zgaruvchilar, shart
-            operatorlari, sikllar va funksiyalar kabi asosiy dasturlash tushunchalari mavjud. U boshqa tillar bilan ham
-            yaxshi ishlaydi va deyarli barcha zamonaviy web saytlar JavaScriptdan foydalanadi. <br><br>
+        👉 HTML sahifani yasaydi<br>
+        👉 CSS uni chiroyli qiladi<br>
+        👉 JavaScript esa unga harakat va aqllilik beradi<br><br>
 
-            JavaScriptni yozish uchun maxsus dasturlar yoki oddiy matn muharrirlari yetarli. Eng ko‘p ishlatiladigan kod
-            muharrirlaridan biri bu Visual Studio Code hisoblanadi. <br><br>
+        🧠 JavaScript nima qiladi?<br><br>
 
-            Xulosa qilib aytganda, JavaScript — web dasturlashning eng muhim va keng tarqalgan tillaridan biri bo‘lib,
-            saytlarni “jonlantirish” uchun ishlatiladi.</p>
+        JavaScript yordamida:<br><br>
+
+        Tugma bosilganda amal bajariladi<br>
+        Formadagi ma’lumot tekshiriladi<br>
+        Animatsiyalar ishlaydi<br>
+        O‘yinlar yaratiladi<br>
+        Internetdan ma’lumot olinadi<br>
+        ⚙️ Oddiy misol<br><br>
+
+        alert("Salom!");<br><br>
+
+        👉 Ekranda xabar chiqadi<br><br>
+
+        🔥 JavaScript qayerda ishlatiladi?<br>
+        🌐 Web saytlar<br>
+        🖥️ Server (Node.js)<br>
+        📱 Mobil ilovalar<br>
+        🎮 O‘yinlar<br>
+        🧠 Juda oddiy tushuncha<br><br>
+
+        👉 JavaScript — bu saytni “tirik” qiladigan til<br>
+        👉 U foydalanuvchi bilan ishlaydi<br><br>
+
+        🚀 Xulosa<br><br>
+
+        JavaScript — web dasturlashning eng muhim tillaridan biri bo‘lib, saytlarni oddiy matndan jonli va interaktiv
+        tizimga aylantiradi.
     </div>
-    <div class="main main2" id="m2">
+    <div class="main main1" id="m2">
         <h1>Modul Oyna</h1>
         JavaScriptda modal oynalar (modal windows) — bu foydalanuvchining e’tiborini jalb qilish uchun chiqadigan maxsus
         oynalar. Ular ochilganda, odatda, asosiy sahifa bilan ishlash vaqtincha to‘xtaydi. <br><br>
@@ -216,7 +236,7 @@
         <br>
         orqali oson ishlatiladi.
     </div>
-    <div class="main main3" id="m3">
+    <div class="main main1" id="m3">
         <h1>variableslar haqida</h1>
         📌 Variables (o‘zgaruvchilar) nima? <br><br>
 
@@ -279,7 +299,96 @@
 
         Variables — bu JavaScriptning eng asosiy qismi. Ular ma’lumotlarni saqlash va boshqarish uchun ishlatiladi.
     </div>
-    <div class="main main4" id="m4">
+    <div class="main main1" id="m4">
+        <h1>Data Type</h1>
+        🧠 JavaScript Data Types <br><br>
+        JavaScriptda ma’lumotlar 2 xil bo‘ladi:<br>
+        👉 Primitive (oddiy)<br>
+        👉 Non-Primitive (murakkab)<br><br>
+
+        🧠 1. Primitive (oddiy turlar)<br>
+        👉 Bu turlarda faqat bitta narsa saqlanadi<br><br>
+
+        📝 String (matn)<br>
+        let ism = "Ali";<br>
+        👉 Bu matn saqlaydi<br>
+        👉 Masalan: ism, shahar, xabar<br>
+        🧠 Oddiy: “yozuv”<br><br>
+
+        🔢 Number (son)<br>
+        let yosh = 15;<br>
+        👉 Sonlarni saqlaydi<br>
+        👉 Hisob-kitob uchun ishlatiladi<br>
+        🧠 Oddiy: “raqam”<br><br>
+
+        ✔️ Boolean (true/false)<br>
+        let o‘qiydi = true;<br>
+        👉 Faqat 2 holat:<br><br><br>
+
+
+        true = ha<br><br>
+
+
+        false = yo‘q<br><br>
+
+
+        🧠 Oddiy: “ha yoki yo‘q”<br><br>
+
+        🚫 Undefined<br>
+        let a;<br>
+        👉 Hech narsa berilmagan<br>
+        👉 Bo‘sh turibdi<br>
+        🧠 Oddiy: “hali qiymat yo‘q”<br><br>
+
+        ❌ Null<br>
+        let b = null;<br>
+        👉 Ataylab bo‘sh qilingan<br>
+        🧠 Oddiy: “bu yerda hech narsa yo‘q”<br><br>
+
+        🔐 Symbol<br>
+        👉 Har biri noyob (takrorlanmaydi)<br>
+        🧠 Oddiy: “unikal belgi”<br><br>
+
+        🧮 BigInt<br>
+        👉 Juda katta sonlar uchun<br>
+        🧠 Oddiy: “katta raqamlar”<br><br>
+
+        📦 2. Non-Primitive (murakkab turlar)<br>
+        👉 Bu turlarda bir nechta ma’lumot bo‘ladi<br><br>
+
+        👤 Object<br>
+        let odam = {<br>
+        ism: "Ali",<br>
+        yosh: 16<br>
+        };<br><br>
+        👉 Bir narsa haqida bir nechta ma’lumot<br>
+        Masalan: odam (ism + yosh)<br>
+        🧠 Oddiy: “bitta narsa, ichida ko‘p ma’lumot”<br><br>
+
+        📋 Array<br>
+        let mevalar = ["olma", "banan", "uzum"];<br>
+        👉 Ro‘yxat saqlaydi<br>
+        👉 Ko‘p narsani bir joyga yig‘adi<br>
+        🧠 Oddiy: “ro‘yxat”<br><br>
+
+        ⚙️ Function<br>
+        function salom() {<br>
+        console.log("Salom");<br>
+        }<br><br>
+        👉 Bir amalni bajaradi<br>
+        👉 Kodni qayta-qayta ishlatish uchun<br>
+        🧠 Oddiy: “buyruq (ish bajaradi)”<br><br>
+
+        🚀 Eng oson xulosa<br>
+        🧠 Primitive:<br>
+        👉 1 ta narsa saqlaydi<br>
+        👉 (matn, son, true/false)<br>
+        📦 Non-Primitive:<br>
+        👉 ko‘p narsa saqlaydi<br>
+        👉 (obyekt, ro‘yxat, funksiya)<br>
+
+    </div>
+    <div class="main main1" id="m5">
         <h1>Operatorslar</h1>
         📌 Operatorlar nima? <br><br>
 
@@ -340,7 +449,6 @@
 
                 uchun ishlatiladi.
     </div>
-    <div class="main main1" id="m5"></div>
     <div class="main main1" id="m6"></div>
     <div class="main main1" id="m7"></div>
     <div class="main main1" id="m8"></div>
