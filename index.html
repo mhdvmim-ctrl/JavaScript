@@ -390,64 +390,69 @@
     </div>
     <div class="main main1" id="m5">
         <h1>Operatorslar</h1>
-        📌 Operatorlar nima? <br><br>
+       Operatorlar — JavaScriptda qiymatlar ustida amal bajaruvchi belgilar. <br><br>
 
-        Operatorlar — JavaScriptda qiymatlar ustida turli amallar bajarish uchun ishlatiladigan belgilar yoki
-        buyruqlar.<br><br>
+Masalan:<br><br>
 
-        Masalan: qo‘shish, ayirish, taqqoslash, mantiqiy tekshirish va boshqalar.<br><br>
+hisoblash<br>
+solishtirish<br>
+mantiqiy tekshirish<br>
+qiymat berish<br>
+➕ 1. Arifmetik operatorlar (hisob-kitob)<br><br>
 
-        ➕ 1. Arifmetik operatorlar (hisob-kitob)<br><br>
+a + b → qo‘shish (masalan: 10 + 5 = 15)<br>
+a - b → ayirish (10 - 5 = 5)<br>
+a * b → ko‘paytirish (10 * 5 = 50)<br>
+a / b → bo‘lish (10 / 5 = 2)<br>
+a % b → qoldiq (10 % 3 = 1)<br>
+a ** b → daraja (2 ** 3 = 8)<br><br>
 
-        let a = 10;<br>
-        let b = 5;<br><br>
+⚖️ 2. Taqqoslash operatorlari (comparison)<br><br>
 
-        a + b → 15 (qo‘shish)<br>
-        a - b → 5 (ayirish)<br>
-        a * b → 50 (ko‘paytirish)<br>
-        a / b → 2 (bo‘lish)<br>
-        a % b → 0 (qoldiq)<br><br>
+a == b → qiymatlar tengmi (5 == "5" → true)<br>
+a === b → qiymat va type tengmi (5 === "5" → false)<br>
+a != b → teng emasmi<br>
+a !== b → type bilan teng emasmi<br>
+a > b → katta<br>
+a < b → kichik<br>
+a >= b → katta yoki teng<br>
+a <= b → kichik yoki teng<br><br>
 
-        ⚖️ 2. Taqqoslash operatorlari (comparison)<br><br>
+🧠 3. Mantiqiy operatorlar (logical)<br><br>
 
-        let a = 10;<br><br>
+a && b → AND (ikkalasi ham true bo‘lsa true)<br>
+a || b → OR (bittasi true bo‘lsa true)<br>
+!a → NOT (teskarisi)<br><br>
 
-        a == 10 → true (teng)<br>
-        a === 10 → true (qat’iy teng)<br>
-        a != 5 → true (teng emas)<br>
-        a > 5 → true (katta)<br>
-        a < 20 → true (kichik)<br>
-            a >= 10 → true (katta yoki teng)<br>
-            a <= 10 → true (kichik yoki teng)<br><br>
+🧾 4. Tayinlash operatorlari (assignment)<br><br>
 
-                🧠 3. Mantiqiy operatorlar (logical)<br><br>
+a = b → qiymat berish<br><br>
 
-                let a = true;<br>
-                let b = false;<br><br>
+a += b → a = a + b<br>
+a -= b → a = a - b<br>
+a *= b → a = a * b<br>
+a /= b → a = a / b<br>
+a %= b → a = a % b<br>
+a **= b → a = a ** b<br><br>
 
-                a && b → false (va / AND)<br>
-                a || b → true (yoki / OR)<br>
-                !a → false (inkor / NOT)<br><br>
+🔢 5. Increment / Decrement<br><br>
 
-                🧾 4. Tayinlash operatorlari (assignment)<br><br>
+a++ → 1 ga oshiradi<br>
+a-- → 1 ga kamaytiradi<br><br>
 
-                let a = 10;<br><br>
+Farqi:<br>
+a++ → oldin eski qiymat, keyin oshadi<br>
+++a → darrov oshadi<br><br>
 
-                a += 5 → 15 (a = a + 5)<br>
-                a -= 3 → 7<br>
-                a *= 2 → 20<br>
-                a /= 2 → 5<br>
-                a %= 3 → qoldiq<br><br>
+❓ 6. Ternary operator (qisqa shart)<br><br>
 
-                🚀 Xulosa<br><br>
+shart ? qiymat1 : qiymat2<br><br>
 
-                Operatorlar JavaScriptda:<br><br>
+Misol:<br>
+age >= 18 ? "Katta" : "Kichik"<br><br>
 
-                hisob-kitob qilish<br>
-                shartlarni tekshirish<br>
-                mantiqiy qarorlar qabul qilish<br><br>
-
-                uchun ishlatiladi.
+Agar shart true bo‘lsa → birinchi qiymat<br>
+Aks holda → ikkinchi qiymat
     </div>
     <div class="main main1" id="m6">
         <div class="loader">
