@@ -14,13 +14,7 @@ body {
 }
 
 header:hover {
-    width: 100%;
-    height: 100px;
-    left: 0;
-    top: 0;
     transition: 1s;
-    border-radius: 0px 0px 10px 10px;
-    border-bottom: 2px solid white;
     background: silver;
 
     a {
@@ -199,15 +193,21 @@ footer {
     border-radius: 20px;
     font-family: sans-serif;
 
+    img{
+            cursor: pointer;
+        }
     >.right {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5%;
 
+        a{
+            height: 100%;            
         img {
-            height: 70%;
+            height: 100%;
             border-radius: 10px;
+        }
         }
     }
 }
@@ -234,7 +234,7 @@ footer {
 .loader div {
     width: 8%;
     height: 24%;
-    background: rgb(128, 128, 128);
+    background: rgb(255, 0, 0);
     position: absolute;
     left: 50%;
     top: 30%;
@@ -255,7 +255,8 @@ footer {
 }
 
 .loader {
-    margin-left: 40%;
+    margin-left: 50%;
+    
 
     .bar1 {
         transform: rotate(0deg) translate(0, -130%);
@@ -373,6 +374,7 @@ footer {
         height: auto;
         padding: 5%;
 
+        
         .left {
             margin-top: 2%;
             text-align: center;
