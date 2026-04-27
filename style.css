@@ -255,7 +255,7 @@ footer {
 }
 
 .loader {
-    margin-left: 50%;
+    margin: auto;
     
 
     .bar1 {
