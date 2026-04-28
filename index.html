@@ -43,9 +43,9 @@
             <a class="a1" href="#m5">js5</a>
             <a class="a2" href="#m5">Operatorslar</a>
         </div>
-        <div onclick="no()" class="cart main-cart">
+        <div style="background: gray;" class="cart main-cart">
             <a class="a1" href="#m6">js6</a>
-            <a class="a2" href="#m6">no information</a>
+            <a class="a2" href="#m6">Conditional</a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m7">js7</a>
@@ -81,7 +81,7 @@
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m15">js15</a>
-            <a class="a2" href="#m15">no information</a>  
+            <a class="a2" href="#m15">no information</a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m16">js16</a>
@@ -93,7 +93,7 @@
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m18">js18</a>
-            <a class="a2" href="#m18">no information</a>  
+            <a class="a2" href="#m18">no information</a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m19">js19</a>
@@ -117,7 +117,7 @@
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m24">js24</a>
-            <a class="a2" href="#m24">no information</a>  
+            <a class="a2" href="#m24">no information</a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m25">js25</a>
@@ -167,7 +167,7 @@
             <a class="a1" href="#m36">js36</a>
             <a class="a2" href="#m36">no information</a>
         </div>
-        <div onclick="no()"  class="cart main-cart">
+        <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m37">js37</a>
             <a class="a2" href="#m37">no information</a>
         </div>
@@ -495,20 +495,95 @@
                 Aks holda → ikkinchi qiymat
     </div>
     <div class="main main1" id="m6">
-        <div class="loader">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
-            <div class="bar5"></div>
-            <div class="bar6"></div>
-            <div class="bar7"></div>
-            <div class="bar8"></div>
-            <div class="bar9"></div>
-            <div class="bar10"></div>
-            <div class="bar11"></div>
-            <div class="bar12"></div>
-        </div>
+        <h1>Conditional</h1>
+
+        🧠 JavaScript Conditional (Shartlar) <br><br>
+
+        JavaScriptda shart orqali qaror qabul qilinadi:<br>
+        👉 Agar shart to‘g‘ri bo‘lsa — kod ishlaydi<br>
+        👉 Aks holda — boshqa kod ishlaydi<br><br>
+
+        🧠 1. if / else <br>
+        👉 Eng asosiy shart operatori <br><br>
+
+        📝 Misol:<br>
+        let yosh = 16;<br><br>
+
+        if (yosh >= 18) {<br>
+        &nbsp;&nbsp;console.log("Kirish mumkin");<br>
+        } else {<br>
+        &nbsp;&nbsp;console.log("Kirish mumkin emas");<br>
+        }<br><br>
+
+        👉 if = agar <br>
+        👉 else = aks holda <br>
+        🧠 Oddiy: “agar bo‘lsa / bo‘lmasa”<br><br>
+
+
+        🧠 else if (ko‘p tekshiruv) <br><br>
+
+        📝 Misol:<br>
+        let ball = 75;<br><br>
+
+        if (ball >= 90) {<br>
+        &nbsp;&nbsp;console.log("A");<br>
+        } else if (ball >= 70) {<br>
+        &nbsp;&nbsp;console.log("B");<br>
+        } else {<br>
+        &nbsp;&nbsp;console.log("C");<br>
+        }<br><br>
+
+        👉 Bir nechta shart tekshiradi<br>
+        🧠 Oddiy: “ketma-ket tekshiradi”<br><br>
+
+
+        🧠 2. switch case <br>
+        👉 Ko‘p variant bo‘lsa ishlatiladi <br><br>
+
+        📝 Misol:<br>
+        let kun = 2;<br><br>
+
+        switch (kun) {<br>
+        &nbsp;&nbsp;case 1:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Dushanba");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+        &nbsp;&nbsp;case 2:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Seshanba");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+        &nbsp;&nbsp;default:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Boshqa kun");<br>
+        }<br><br>
+
+        👉 case = variant <br>
+        👉 break = to‘xtatadi <br>
+        👉 default = hech biri mos kelmasa <br>
+        🧠 Oddiy: “tanlash”<br><br>
+
+
+        🧠 3. Ternary operator (? :) <br>
+        👉 if else ning qisqa yozilishi <br><br>
+
+        📝 Misol:<br>
+        let yosh2 = 20;<br><br>
+
+        let natija = (yosh2 >= 18) ? "Katta" : "Kichik";<br>
+        console.log(natija);<br><br>
+
+        👉 ? = agar to‘g‘ri bo‘lsa <br>
+        👉 : = aks holda <br>
+        🧠 Oddiy: “qisqa if”<br><br>
+
+
+        🚀 Eng oson xulosa <br><br>
+
+        🧠 if / else:<br>
+        👉 Oddiy shartlar uchun <br><br>
+
+        📦 switch case:<br>
+        👉 Ko‘p variantlar uchun <br><br>
+
+        ⚡ ternary (? :) :<br>
+        👉 Qisqa yozish uchun <br>
     </div>
     <div class="main main1" id="m7">
         <div class="loader">
@@ -1057,7 +1132,8 @@
 
 
     <footer>
-        <div onclick="js()" class="right"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="./img/Screenshot 2026-04-20 080350.png" alt=""></a>
+        <div onclick="js()" class="right"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img
+                    src="./img/Screenshot 2026-04-20 080350.png" alt=""></a>
             <h1>JavaScript</h1>
         </div>
         <div class="left">
