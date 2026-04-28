@@ -23,33 +23,33 @@
     </header>
 
     <div id="top" class="main asosiy-main">
-        <div style="background: gray;" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m1">js1</a>
             <a class="a2" href="#m1">JavaScript haqida</a>
         </div>
-        <div style="background: gray;" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m2">js2</a>
             <a class="a2" href="#m2">Modul Oyna</a>
         </div>
-        <div style="background: gray;" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m3">js3</a>
             <a class="a2" href="#m3">variableslar haqida</a>
         </div>
-        <div style="background: gray;" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m4">js4</a>
             <a class="a2" href="#m4">Data Type</a>
         </div>
-        <div style="background: gray;" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m5">js5</a>
             <a class="a2" href="#m5">Operatorslar</a>
         </div>
-        <div style="background: gray;" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m6">js6</a>
             <a class="a2" href="#m6">Conditional statement</a>
         </div>
-        <div onclick="no()" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m7">js7</a>
-            <a class="a2" href="#m7">no information</a>
+            <a class="a2" href="#m7">type conversion</a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m8">js8</a>
@@ -586,20 +586,76 @@
         👉 Qisqa yozish uchun <br>
     </div>
     <div class="main main1" id="m7">
-        <div class="loader">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
-            <div class="bar5"></div>
-            <div class="bar6"></div>
-            <div class="bar7"></div>
-            <div class="bar8"></div>
-            <div class="bar9"></div>
-            <div class="bar10"></div>
-            <div class="bar11"></div>
-            <div class="bar12"></div>
-        </div>
+        <h1>Type Conversion</h1>
+
+        🧠 Type Conversion nima? <br><br>
+
+        Juda oddiy qilib:<br>
+        👉 bu — ma’lumot turini o‘zgartirish <br><br>
+
+        🧠 Misol uchun:<br>
+        "5" → bu string (matn) <br>
+        5 → bu number (son) <br><br>
+
+        👉 Ba’zida bizga matn emas, son kerak bo‘ladi <br>
+        👉 Shunda uni o‘zgartiramiz <br><br>
+
+
+        🧠 1. JS o‘zi o‘zgartirsa (Implicit) <br><br>
+
+        📝 Misol:<br>
+        let a = "5" + 3;<br>
+        console.log(a);<br><br>
+
+        👉 Natija: "53" <br><br>
+
+        ❗ Nima bo‘ldi?<br>
+        👉 JS 3 ni stringga aylantirdi <br>
+        👉 va qo‘shib yubordi <br><br>
+
+        🧠 Oddiy: JS o‘zi hal qiladi <br><br>
+
+
+        🧠 2. O‘zing o‘zgartirsang (Explicit) <br><br>
+
+        📝 Misol:<br>
+        let a = "5";<br>
+        let b = Number(a);<br>
+        console.log(b + 3);<br><br>
+
+        👉 Natija: 8 <br><br>
+
+        ❗ Nima bo‘ldi?<br>
+        👉 "5" → 5 ga aylandi <br>
+        👉 keyin hisoblandi <br><br>
+
+
+        🧠 Eng kerakli funksiyalar <br><br>
+
+        👉 Number() → songa aylantiradi <br>
+        👉 String() → matnga aylantiradi <br>
+        👉 Boolean() → true / false qiladi <br><br>
+
+
+        🧠 Boolean juda oson tushun:<br><br>
+
+        Boolean(1) → true ✅ <br>
+        Boolean(0) → false ❌ <br>
+        Boolean("") → false ❌ <br>
+        Boolean("salom") → true ✅ <br><br>
+
+        👉 Bo‘sh narsa = false <br>
+        👉 To‘ldirilgan narsa = true <br><br>
+
+
+        🚀 ENG MUHIM XULOSA <br><br>
+
+        👉 "5" + 3 = "53" ❌ (xato tushunish) <br>
+        👉 Number("5") + 3 = 8 ✅ (to‘g‘ri) <br><br>
+
+        🧠 Esda tut:<br>
+        👉 JS ba’zida o‘zi o‘zgartiradi <br>
+        👉 lekin yaxshisi — o‘zing nazorat qil <br>
     </div>
     <div class="main main1" id="m8">
         <div class="loader">
