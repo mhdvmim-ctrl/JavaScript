@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, #210635, #6667ab);
+    background: linear-gradient(to right, #9000ff, #6667ab);
 }
 
 header:hover {
@@ -132,7 +132,6 @@ header {
     .cart {
         width: 9%;
         height: 112px;
-        background: silver;
         border-radius: 30px;
         transition: 1s;
         cursor: pointer;
