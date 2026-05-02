@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="none-top" class="none"></div>
     <header>
         <nav>
             <ul>
@@ -22,6 +23,14 @@
         </nav>
     </header>
 
+    <a href="#none-top"><button class="top">
+            <p>top</p><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                fill="#EA3323">
+                <path d="M446.67-160v-513l-240 240L160-480l320-320 320 320-46.67 47-240-240v513h-66.66Z" />
+            </svg>
+        </button></a>
+
+    
     <div id="top" class="main asosiy-main">
         <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m1">js1</a>
@@ -51,9 +60,9 @@
             <a class="a1" href="#m7">js7</a>
             <a class="a2" href="#m7">type conversion</a>
         </div>
-        <div onclick="no()" class="cart main-cart">
+        <div style="background: white;" class="cart main-cart">
             <a class="a1" href="#m8">js8</a>
-            <a class="a2" href="#m8">no information</a>
+            <a class="a2" href="#m8">Loop</a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m9">js9</a>
@@ -658,20 +667,134 @@
         👉 lekin yaxshisi — o‘zing nazorat qil <br>
     </div>
     <div class="main main1" id="m8">
-        <div class="loader">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
-            <div class="bar5"></div>
-            <div class="bar6"></div>
-            <div class="bar7"></div>
-            <div class="bar8"></div>
-            <div class="bar9"></div>
-            <div class="bar10"></div>
-            <div class="bar11"></div>
-            <div class="bar12"></div>
-        </div>
+        <h1>Loop (Takrorlash turlari)</h1>
+
+        🧠 Loop nima? <br><br>
+
+        Juda oddiy qilib:<br>
+        👉 bu — kodni qayta-qayta ishlatish usuli <br>
+        👉 takroriy ishlarni avtomatlashtiradi <br><br>
+
+        🧠 Masalan:<br>
+        👉 1 dan 100 gacha son chiqarish <br>
+        👉 array ichidagi elementlarni chiqarish <br><br>
+
+
+        🚀 1. for loop (eng ko‘p ishlatiladi) <br><br>
+
+        📝 Misol:<br>
+        for (let i = 1; i <= 5; i++) {<br>
+            &nbsp;&nbsp;console.log(i);<br>
+            }<br><br>
+
+            👉 Natija: 1 2 3 4 5 <br><br>
+
+            🧠 Qanday ishlaydi?<br>
+            👉 1. boshlanish (let i = 1)<br>
+            👉 2. shart (i <= 5)<br>
+                👉 3. o‘sish (i++)<br><br>
+
+                🧠 Qachon ishlatiladi?<br>
+                👉 aniq necha marta ishlash kerak bo‘lsa <br><br>
+
+
+                🚀 2. while loop <br><br>
+
+                📝 Misol:<br>
+                let i = 1;<br>
+                while (i <= 5) {<br>
+                    &nbsp;&nbsp;console.log(i);<br>
+                    &nbsp;&nbsp;i++;<br>
+                    }<br><br>
+
+                    👉 Natija: 1 2 3 4 5 <br><br>
+
+                    🧠 Qanday ishlaydi?<br>
+                    👉 shart TRUE bo‘lsa ishlaydi <br>
+                    👉 FALSE bo‘lsa to‘xtaydi <br><br>
+
+                    🧠 Qachon ishlatiladi?<br>
+                    👉 qancha davom etishini bilmasang <br><br>
+
+
+                    🚀 3. do...while loop <br><br>
+
+                    📝 Misol:<br>
+                    let i = 1;<br>
+                    do {<br>
+                    &nbsp;&nbsp;console.log(i);<br>
+                    &nbsp;&nbsp;i++;<br>
+                    } while (i <= 5);<br><br>
+
+                        👉 Natija: 1 2 3 4 5 <br><br>
+
+                        🧠 Eng muhim farq:<br>
+                        👉 do while — kamida 1 marta albatta ishlaydi <br><br>
+
+                        🧠 Qachon ishlatiladi?<br>
+                        👉 foydalanuvchi kiritishi kerak bo‘lsa <br><br>
+
+
+                        🚀 4. for...in loop <br><br>
+
+                        🧠 Bu nima qiladi?<br>
+                        👉 object ichidagi KEY (kalit) larni aylantiradi <br><br>
+
+                        📝 Misol:<br>
+                        let user = {name: "Ali", age: 20};<br><br>
+
+                        for (let key in user) {<br>
+                        &nbsp;&nbsp;console.log(key);<br>
+                        }<br><br>
+
+                        👉 Natija:<br>
+                        name<br>
+                        age<br><br>
+
+                        🧠 Qanday ishlaydi?<br>
+                        👉 object keylarini beradi <br><br>
+
+                        🧠 Qachon ishlatiladi?<br>
+                        👉 object bilan ishlaganda <br><br>
+
+
+                        🚀 5. for...of loop <br><br>
+
+                        🧠 Bu nima qiladi?<br>
+                        👉 array ichidagi VALUE (qiymat) larni beradi <br><br>
+
+                        📝 Misol:<br>
+                        let arr = [10, 20, 30];<br><br>
+
+                        for (let value of arr) {<br>
+                        &nbsp;&nbsp;console.log(value);<br>
+                        }<br><br>
+
+                        👉 Natija:<br>
+                        10<br>
+                        20<br>
+                        30<br><br>
+
+                        🧠 Qanday ishlaydi?<br>
+                        👉 array ichidagi qiymatlarni chiqaradi <br><br>
+
+                        🧠 Qachon ishlatiladi?<br>
+                        👉 array bilan ishlaganda eng qulay <br><br>
+
+
+                        🚀 ENG MUHIM XULOSA <br><br>
+
+                        👉 for → aniq son marta <br>
+                        👉 while → shartga bog‘liq <br>
+                        👉 do while → kamida 1 marta <br>
+                        👉 for in → object KEY <br>
+                        👉 for of → array VALUE <br><br>
+
+                        🧠 Esda tut:<br>
+                        👉 object = for in <br>
+                        👉 array = for of <br>
+                        👉 takrorlash = loop <br>
+    </div>
     </div>
     <div class="main main1" id="m9">
         <div class="loader">
@@ -1186,7 +1309,7 @@
         </div>
     </div>
 
-
+    <div id="botoom">dddd</div>
     <footer>
         <div onclick="js()" class="right"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img
                     src="./img/Screenshot 2026-04-20 080350.png" alt=""></a>

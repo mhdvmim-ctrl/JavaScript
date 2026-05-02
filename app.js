@@ -11,16 +11,15 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 });
 
-alert('siz MHDV saytidasiz bu yerda JavaScript haqida malumotlarni bor 💻')
+// alert('siz MHDV saytidasiz bu yerda JavaScript haqida malumotlarni bor 💻')
 
 function no() {
     alert('kechirasiz lekin hozirda bu bolimda malumot mavjud emas keyinroq yana tekshirib koring 🙏')
 }
 
-function telegram(){
+function telegram() {
     alert('MHDV telegrami')
 }
-function js(){
+function js() {
     alert('JavaScriptning rasmiy saifasi')
 }
-
