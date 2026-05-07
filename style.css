@@ -591,3 +591,10 @@ footer {
 
 
 }
+
+@media only screen and (max-width:200px) { 
+    body{
+        display: none;
+    }
+    
+}
