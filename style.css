@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: linear-gradient(45deg, black, white, black, white, black);
+    background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
 }
 
 header:hover {
@@ -131,14 +131,14 @@ header {
     height: auto;
     padding: 3%;
     color: white;
-    box-shadow: 0px 0px 10px 20px white;
-    background: rgba(255, 255, 255, 0.377);
+    box-shadow: 0px 0px 10px 10px white;
+    background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
     border: 2px solid white;
     margin-left: 10%;
     margin-top: 5%;
     border-radius: 30px;
     transition: 1s;
-    color: black;
+    color: white;
     font-family: sans-serif;
     font-weight: 500;
 
@@ -183,7 +183,7 @@ header {
         border-radius: 30px;
         transition: 1s;
         cursor: pointer;
-        border: 2px solid black;
+        border: 2px solid silver;
 
         a {
             width: 100%;
@@ -417,6 +417,8 @@ footer {
 
     .main {
         height: auto;
+        background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
+
     }
 
     .asosiy-main {
@@ -510,6 +512,8 @@ footer {
 
     .main {
         height: auto;
+        background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
+
     }
 
     .asosiy-main {
@@ -565,6 +569,8 @@ footer {
 
     .main {
         height: auto;
+        background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
+
     }
 
     .asosiy-main {
@@ -592,9 +598,9 @@ footer {
 
 }
 
-@media only screen and (max-width:200px) { 
-    body{
+@media only screen and (max-width:200px) {
+    body {
         display: none;
     }
-    
+
 }
