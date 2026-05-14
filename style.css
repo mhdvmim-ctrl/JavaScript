@@ -10,12 +10,13 @@ html {
 }
 
 body {
-    background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
+    background: linear-gradient(45deg, #011c40, #023859);
 }
 
 header:hover {
     transition: 1s;
-    background: silver;
+    background: #023859;
+    box-shadow: none;
 
     a {
         color: white;
@@ -26,7 +27,7 @@ header:hover {
 header {
     width: 80%;
     height: 70px;
-    background: rgba(255, 255, 255, 0.377);
+    background: #02385998;
     border-radius: 20px;
     position: fixed;
     top: 5%;
@@ -36,7 +37,7 @@ header {
     justify-content: center;
     border: 2px solid white;
     transition: 1s;
-    box-shadow: 0px 0px 40px 10px silver;
+    box-shadow: 0px 0px 10px 10px silver;
 
     nav {
         width: 100%;
@@ -65,7 +66,7 @@ header {
 
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: white;
                         font-family: sans-serif;
                     }
                 }
@@ -77,9 +78,9 @@ header {
 .top {
     width: 60px;
     height: 60px;
-    background: white;
-    border: 2px solid black;
-    box-shadow: 0px 0px 10px 10px salmon;
+    background: rgba(255, 255, 255, 0.445);
+    border: none;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.445);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -107,7 +108,6 @@ header {
 
 .top:focus {
     transition: 1s;
-    background: black;
 
     svg {
         display: none;
@@ -132,7 +132,6 @@ header {
     padding: 3%;
     color: white;
     box-shadow: 0px 0px 10px 10px white;
-    background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
     border: 2px solid white;
     margin-left: 10%;
     margin-top: 5%;
@@ -140,6 +139,7 @@ header {
     transition: 1s;
     color: white;
     font-family: sans-serif;
+    background: none;
     font-weight: 500;
 
 
@@ -170,10 +170,14 @@ header {
             display: none;
             transition: 1s;
         }
-
+        
         .a2 {
+            background-color: #011c40;
             display: flex;
             transition: 1s;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
         }
     }
 
@@ -192,7 +196,7 @@ header {
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            color: black;
+            color: white;
             font-size: 20px;
             text-align: center;
             transition: 1s;
@@ -415,9 +419,31 @@ footer {
         }
     }
 
+    .top {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.445);
+        border: none;
+        box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.445);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 3;
+        right: 2%;
+        top: 40%;
+        transition: 1s;
+
+        p {
+            display: none;
+            transition: 1s;
+        }
+    }
+
     .main {
         height: auto;
-        background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
+        background: none;
 
     }
 
@@ -510,9 +536,32 @@ footer {
         }
     }
 
+
+    .top {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.445);
+        border: none;
+        box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.445);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 3;
+        right: 2%;
+        top: 40%;
+        transition: 1s;
+
+        p {
+            display: none;
+            transition: 1s;
+        }
+    }
+
     .main {
         height: auto;
-        background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
+        background: none;
 
     }
 
@@ -567,9 +616,31 @@ footer {
         }
     }
 
+    .top {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.445);
+        border: none;
+        box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.445);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 3;
+        right: 2%;
+        top: 40%;
+        transition: 1s;
+
+        p {
+            display: none;
+            transition: 1s;
+        }
+    }
+
     .main {
         height: auto;
-        background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967837_1280.jpg);
+        background: none;
 
     }
 

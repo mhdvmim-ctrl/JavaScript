@@ -26,56 +26,56 @@
 
     <a href="#none-top"><button class="top">
             <p>top</p><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
-                fill="#EA3323">
+                fill="#023859">
                 <path d="M446.67-160v-513l-240 240L160-480l320-320 320 320-46.67 47-240-240v513h-66.66Z" />
             </svg>
         </button></a>
 
 
     <div id="top" class="main asosiy-main">
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m1">js1</a>
             <a class="a2" href="#m1">JavaScript haqida</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m2">js2</a>
             <a class="a2" href="#m2">Modul Oyna</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m3">js3</a>
             <a class="a2" href="#m3">variableslar haqida</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m4">js4</a>
             <a class="a2" href="#m4">Data Type</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m5">js5</a>
             <a class="a2" href="#m5">Operatorslar</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m6">js6</a>
             <a class="a2" href="#m6">Conditional statement</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m7">js7</a>
             <a class="a2" href="#m7">type conversion</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m8">js8</a>
             <a class="a2" href="#m8">Loop</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m9">js9</a>
             <a class="a2" href="#m9">Function</a>
         </div>
-        <div style="background: white;" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m10">js10</a>
             <a class="a2" href="#m10">function turlari</a>
         </div>
-        <div onclick="no()" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m11">js11</a>
-            <a class="a2" href="#m11">no information</a>
+            <a class="a2" href="#m11">Scope </a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m12">js12</a>
@@ -1305,20 +1305,375 @@
         C <br>
     </div>
     <div class="main main1" id="m11">
-        <div class="loader">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
-            <div class="bar5"></div>
-            <div class="bar6"></div>
-            <div class="bar7"></div>
-            <div class="bar8"></div>
-            <div class="bar9"></div>
-            <div class="bar10"></div>
-            <div class="bar11"></div>
-            <div class="bar12"></div>
-        </div>
+        <h1>Scope (O‘zgaruvchilar ko‘rinish sohasi)</h1>
+
+        🧠 Scope nima? <br><br>
+
+        Juda oddiy qilib:<br>
+        👉 Scope — bu o‘zgaruvchi qayerda ishlashini bildiradi <br>
+        👉 Qaysi joyda yaratilgan bo‘lsa, o‘sha joyda ishlaydi <br>
+        👉 Tashqarida ishlatib bo‘lmaydi <br><br>
+
+
+
+        🚀 Scope nima uchun kerak? <br><br>
+
+        👉 Kodlarni tartibli qiladi <br>
+        👉 O‘zgaruvchilar aralashib ketmaydi <br>
+        👉 Xavfsiz kod yozishga yordam beradi <br><br>
+
+
+
+        🚀 JavaScriptda 3 xil scope bor <br><br>
+
+        👉 1. Global Scope <br>
+        👉 2. Function Scope <br>
+        👉 3. Block Scope <br><br>
+
+
+
+
+
+        🚀 1. Global Scope <br><br>
+
+        🧠 Eng tashqarida yaratilgan o‘zgaruvchi <br>
+        👉 hamma joyda ishlaydi <br><br>
+
+        📝 Misol:<br><br>
+
+        let ism = "Ali";<br><br>
+
+        function salom() {<br>
+        &nbsp;&nbsp;console.log(ism);<br>
+        }<br><br>
+
+        salom();<br>
+        console.log(ism);<br><br>
+
+        👉 Natija:<br>
+        Ali <br>
+        Ali <br><br>
+
+        🧠 Sababi:<br>
+        👉 ism global scope’da yaratilgan <br>
+        👉 hamma joydan ko‘rinadi <br><br>
+
+
+
+
+
+        🚀 2. Function Scope <br><br>
+
+        🧠 Function ichida yaratilgan o‘zgaruvchi <br>
+        👉 faqat function ichida ishlaydi <br><br>
+
+        📝 Misol:<br><br>
+
+        function test() {<br>
+        &nbsp;&nbsp;let yosh = 18;<br>
+        &nbsp;&nbsp;console.log(yosh);<br>
+        }<br><br>
+
+        test();<br><br>
+
+        console.log(yosh);<br><br>
+
+        👉 Natija:<br>
+        18 <br>
+        Error ❌ <br><br>
+
+        🧠 Sababi:<br>
+        👉 yosh faqat function ichida mavjud <br>
+        👉 tashqarida yo‘q <br><br>
+
+
+
+
+
+        🚀 3. Block Scope <br><br>
+
+        🧠 {} ichida yaratilgan o‘zgaruvchi <br>
+        👉 faqat o‘sha block ichida ishlaydi <br><br>
+
+        📝 Misol:<br><br>
+
+        if (true) {<br>
+        &nbsp;&nbsp;let son = 50;<br>
+        &nbsp;&nbsp;console.log(son);<br>
+        }<br><br>
+
+        console.log(son);<br><br>
+
+        👉 Natija:<br>
+        50 <br>
+        Error ❌ <br><br>
+
+        🧠 Sababi:<br>
+        👉 let block scope yaratadi <br>
+        👉 tashqarida ishlamaydi <br><br>
+
+
+
+
+
+        🚀 var bilan farqi <br><br>
+
+        🧠 var block scope yaratmaydi <br><br>
+
+        📝 Misol:<br><br>
+
+        if (true) {<br>
+        &nbsp;&nbsp;var ism = "Vali";<br>
+        }<br><br>
+
+        console.log(ism);<br><br>
+
+        👉 Natija:<br>
+        Vali <br><br>
+
+        🧠 Sababi:<br>
+        👉 var blockni e’tiborga olmaydi <br>
+        👉 let va const esa block scope yaratadi <br><br>
+
+
+
+
+
+        🚀 let va const block scope qiladi <br><br>
+
+        📝 Misol:<br><br>
+
+        if (true) {<br>
+        &nbsp;&nbsp;const son = 100;<br>
+        &nbsp;&nbsp;console.log(son);<br>
+        }<br><br>
+
+        console.log(son);<br><br>
+
+        👉 Natija:<br>
+        100 <br>
+        Error ❌ <br><br>
+
+
+
+
+
+        🚀 Ichki scope tashqi scopeni ko‘radi <br><br>
+
+        🧠 Function ichidagi kod tashqaridagi o‘zgaruvchini oladi <br><br>
+
+        📝 Misol:<br><br>
+
+        let meva = "Olma";<br><br>
+
+        function korsat() {<br>
+        &nbsp;&nbsp;console.log(meva);<br>
+        }<br><br>
+
+        korsat();<br><br>
+
+        👉 Natija:<br>
+        Olma <br><br>
+
+
+
+
+
+        🚀 Tashqi scope ichki scopeni ko‘rmaydi <br><br>
+
+        📝 Misol:<br><br>
+
+        function xona() {<br>
+        &nbsp;&nbsp;let parol = 1234;<br>
+        }<br><br>
+
+        console.log(parol);<br><br>
+
+        👉 Natija:<br>
+        Error ❌ <br><br>
+
+        🧠 Sababi:<br>
+        👉 ichkaridagi o‘zgaruvchi yashirin bo‘ladi <br><br>
+
+
+
+
+
+        🚀 Nested Scope (Ichma-ich scope) <br><br>
+
+        🧠 Function ichida yana function bo‘lishi mumkin <br><br>
+
+        📝 Misol:<br><br>
+
+        let davlat = "Uzbekistan";<br><br>
+
+        function outer() {<br>
+        &nbsp;&nbsp;let shahar = "Toshkent";<br><br>
+
+        &nbsp;&nbsp;function inner() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;let tuman = "Chilonzor";<br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(davlat);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(shahar);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(tuman);<br>
+        &nbsp;&nbsp;}<br><br>
+
+        &nbsp;&nbsp;inner();<br>
+        }<br><br>
+
+        outer();<br><br>
+
+        👉 Natija:<br>
+        Uzbekistan <br>
+        Toshkent <br>
+        Chilonzor <br><br>
+
+
+
+
+
+        🚀 Scope Chain <br><br>
+
+        🧠 JavaScript o‘zgaruvchini topish uchun tashqariga qarab qidiradi <br><br>
+
+        👉 avval ichkaridan qidiradi <br>
+        👉 topmasa tashqariga chiqadi <br>
+        👉 oxirigacha qidiradi <br><br>
+
+
+
+
+
+        🚀 Shadowing (Yashirib yuborish) <br><br>
+
+        🧠 Ichkaridagi o‘zgaruvchi tashqaridagini yopib yuboradi <br><br>
+
+        📝 Misol:<br><br>
+
+        let ism = "Ali";<br><br>
+
+        function test() {<br>
+        &nbsp;&nbsp;let ism = "Vali";<br>
+        &nbsp;&nbsp;console.log(ism);<br>
+        }<br><br>
+
+        test();<br>
+        console.log(ism);<br><br>
+
+        👉 Natija:<br>
+        Vali <br>
+        Ali <br><br>
+
+        🧠 Sababi:<br>
+        👉 ichkaridagi ism ustun bo‘ldi <br><br>
+
+
+
+
+
+        🚀 Scope bilan eng ko‘p ishlatiladigan joylar <br><br>
+
+        👉 functionlarda <br>
+        👉 if ichida <br>
+        👉 for loop ichida <br>
+        👉 while ichida <br>
+        👉 object va classlarda <br><br>
+
+
+
+
+
+        🚀 For loopdagi scope <br><br>
+
+        📝 Misol:<br><br>
+
+        for (let i = 0; i &lt; 3; i++) {<br>
+        &nbsp;&nbsp;console.log(i);<br>
+        }<br><br>
+
+        console.log(i);<br><br>
+
+        👉 Natija:<br>
+        0 <br>
+        1 <br>
+        2 <br>
+        Error ❌ <br><br>
+
+        🧠 Sababi:<br>
+        👉 let loop ichida qoladi <br><br>
+
+
+
+
+
+        🚀 Scope va const <br><br>
+
+        🧠 const o‘zgarmas o‘zgaruvchi <br>
+        👉 lekin scope qoidasi bir xil <br><br>
+
+        📝 Misol:<br><br>
+
+        {<br>
+        &nbsp;&nbsp;const pi = 3.14;<br>
+        &nbsp;&nbsp;console.log(pi);<br>
+        }<br><br>
+
+        console.log(pi);<br><br>
+
+        👉 Natija:<br>
+        3.14 <br>
+        Error ❌ <br><br>
+
+
+
+
+
+        🚀 ENG MUHIM XULOSA <br><br>
+
+        👉 Global scope = hamma joyda ishlaydi <br>
+        👉 Function scope = faqat function ichida <br>
+        👉 Block scope = {} ichida ishlaydi <br>
+        👉 let va const xavfsizroq <br>
+        👉 var eski usul <br><br>
+
+
+
+
+
+        🧠 ESDA TUTISH OSON YO‘L <br><br>
+
+        👉 Global = butun loyiha ko‘radi <br>
+        👉 Function = faqat function ko‘radi <br>
+        👉 Block = faqat {} ichida <br>
+        👉 let/const = yopiq <br>
+        👉 var = ochiqroq <br><br>
+
+
+
+
+
+        🚀 MINI MISOL <br><br>
+
+        let a = 10;<br><br>
+
+        function test() {<br>
+        &nbsp;&nbsp;let b = 20;<br><br>
+
+        &nbsp;&nbsp;if (true) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;let c = 30;<br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(a);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(b);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(c);<br>
+        &nbsp;&nbsp;}<br>
+        }<br><br>
+
+        test();<br><br>
+
+        👉 Natija:<br>
+        10 <br>
+        20 <br>
+        30 <br>
     </div>
     <div class="main main1" id="m12">
         <div class="loader">
