@@ -173,6 +173,7 @@ header {
         
         .a2 {
             background-color: #011c40;
+            color: white ;
             display: flex;
             transition: 1s;
             width: 100%;
