@@ -77,9 +77,9 @@
             <a class="a1" href="#m11">js11</a>
             <a class="a2" href="#m11">Scope </a>
         </div>
-        <div onclick="no()" class="cart main-cart">
+        <div style="background: #26658c;" class="cart main-cart">
             <a class="a1" href="#m12">js12</a>
-            <a class="a2" href="#m12">no information</a>
+            <a class="a2" href="#m12">String Methodlar </a>
         </div>
         <div onclick="no()" class="cart main-cart">
             <a class="a1" href="#m13">js13</a>
@@ -1676,20 +1676,469 @@
         30 <br>
     </div>
     <div class="main main1" id="m12">
-        <div class="loader">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
-            <div class="bar5"></div>
-            <div class="bar6"></div>
-            <div class="bar7"></div>
-            <div class="bar8"></div>
-            <div class="bar9"></div>
-            <div class="bar10"></div>
-            <div class="bar11"></div>
-            <div class="bar12"></div>
-        </div>
+        <h1>Methodlar (Methods)</h1>
+
+        🧠 Method nima? <br><br>
+
+        Juda oddiy qilib:<br>
+        👉 Method — bu object ichidagi function <br>
+        👉 U object bilan ishlaydi <br>
+        👉 Objectning ma’lumotlarini boshqaradi <br><br>
+
+
+
+
+
+        🚀 Method nima uchun kerak? <br><br>
+
+        👉 Kodlarni tartibli qiladi <br>
+        👉 Object ichidagi ma’lumotlarni ishlatadi <br>
+        👉 Qayta ishlatish oson bo‘ladi <br><br>
+
+
+
+
+
+        🚀 Oddiy Method <br><br>
+
+        📝 Misol:<br><br>
+
+        let user = {<br>
+        &nbsp;&nbsp;ism: "Ali",<br><br>
+
+        &nbsp;&nbsp;salom: function() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Salom");<br>
+        &nbsp;&nbsp;}<br>
+        };<br><br>
+
+        user.salom();<br><br>
+
+        👉 Natija:<br>
+        Salom <br><br>
+
+
+
+
+
+        🚀 Qisqa yozilishi <br><br>
+
+        🧠 JavaScriptda methodni qisqaroq yozish mumkin <br><br>
+
+        📝 Misol:<br><br>
+
+        let car = {<br>
+        &nbsp;&nbsp;nom: "BMW",<br><br>
+
+        &nbsp;&nbsp;info() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Mashina");<br>
+        &nbsp;&nbsp;}<br>
+        };<br><br>
+
+        car.info();<br><br>
+
+        👉 Natija:<br>
+        Mashina <br><br>
+
+
+
+
+
+        🚀 this kalit so‘zi <br><br>
+
+        🧠 this objectning o‘zini bildiradi <br><br>
+
+        📝 Misol:<br><br>
+
+        let odam = {<br>
+        &nbsp;&nbsp;ism: "Vali",<br><br>
+
+        &nbsp;&nbsp;tanishtir() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(this.ism);<br>
+        &nbsp;&nbsp;}<br>
+        };<br><br>
+
+        odam.tanishtir();<br><br>
+
+        👉 Natija:<br>
+        Vali <br><br>
+
+        🧠 Sababi:<br>
+        👉 this object ichidagi ismni oldi <br><br>
+
+
+
+
+
+        🚀 Bir nechta method <br><br>
+
+        📝 Misol:<br><br>
+
+        let telefon = {<br>
+        &nbsp;&nbsp;model: "iPhone",<br><br>
+
+        &nbsp;&nbsp;yoq() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Telefon yoqildi");<br>
+        &nbsp;&nbsp;},<br><br>
+
+        &nbsp;&nbsp;ochir() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Telefon ochdi");<br>
+        &nbsp;&nbsp;}<br>
+        };<br><br>
+
+        telefon.yoq();<br>
+        telefon.ochir();<br><br>
+
+        👉 Natija:<br>
+        Telefon yoqildi <br>
+        Telefon ochdi <br><br>
+
+
+
+
+
+        🚀 Method parametr olishi <br><br>
+
+        📝 Misol:<br><br>
+
+        let kalk = {<br>
+        &nbsp;&nbsp;qosh(a, b) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(a + b);<br>
+        &nbsp;&nbsp;}<br>
+        };<br><br>
+
+        kalk.qosh(5, 3);<br><br>
+
+        👉 Natija:<br>
+        8 <br><br>
+
+
+
+
+
+        🚀 Method qiymat qaytarishi <br><br>
+
+        📝 Misol:<br><br>
+
+        let math = {<br>
+        &nbsp;&nbsp;kopaytir(a, b) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return a * b;<br>
+        &nbsp;&nbsp;}<br>
+        };<br><br>
+
+        console.log(math.kopaytir(4, 5));<br><br>
+
+        👉 Natija:<br>
+        20 <br><br>
+
+
+
+
+
+        🚀 String methodlari <br><br>
+
+        🧠 JavaScriptda stringlar tayyor methodlarga ega <br><br>
+
+        📝 Misol:<br><br>
+
+        let text = "salom";<br><br>
+
+        console.log(text.toUpperCase());<br><br>
+
+        👉 Natija:<br>
+        SALOM <br><br>
+
+
+
+
+
+        🚀 Array methodlari <br><br>
+
+        📝 Misol:<br><br>
+
+        let fruits = ["Olma", "Banan"];<br><br>
+
+        fruits.push("Uzum");<br><br>
+
+        console.log(fruits);<br><br>
+
+        👉 Natija:<br>
+        ["Olma", "Banan", "Uzum"] <br><br>
+
+
+
+
+
+        🚀 pop() methodi <br><br>
+
+        📝 Misol:<br><br>
+
+        let sonlar = [1, 2, 3];<br><br>
+
+        sonlar.pop();<br><br>
+
+        console.log(sonlar);<br><br>
+
+        👉 Natija:<br>
+        [1, 2] <br><br>
+
+
+
+
+
+        🚀 shift() methodi <br><br>
+
+        🧠 Birinchi elementni o‘chiradi <br><br>
+
+        📝 Misol:<br><br>
+
+        let ranglar = ["Qizil", "Ko‘k", "Yashil"];<br><br>
+
+        ranglar.shift();<br><br>
+
+        console.log(ranglar);<br><br>
+
+        👉 Natija:<br>
+        ["Ko‘k", "Yashil"] <br><br>
+
+
+
+
+
+        🚀 unshift() methodi <br><br>
+
+        🧠 Array boshiga element qo‘shadi <br><br>
+
+        📝 Misol:<br><br>
+
+        let names = ["Ali"];<br><br>
+
+        names.unshift("Vali");<br><br>
+
+        console.log(names);<br><br>
+
+        👉 Natija:<br>
+        ["Vali", "Ali"] <br><br>
+
+
+
+
+
+        🚀 includes() methodi <br><br>
+
+        📝 Misol:<br><br>
+
+        let mevalar = ["Olma", "Shaftoli"];<br><br>
+
+        console.log(mevalar.includes("Olma"));<br><br>
+
+        👉 Natija:<br>
+        true <br><br>
+
+
+
+
+
+        🚀 indexOf() methodi <br><br>
+
+        📝 Misol:<br><br>
+
+        let letters = ["a", "b", "c"];<br><br>
+
+        console.log(letters.indexOf("b"));<br><br>
+
+        👉 Natija:<br>
+        1 <br><br>
+
+
+
+
+
+        🚀 slice() methodi <br><br>
+
+        🧠 Arraydan nusxa oladi <br><br>
+
+        📝 Misol:<br><br>
+
+        let nums = [10, 20, 30, 40];<br><br>
+
+        console.log(nums.slice(1, 3));<br><br>
+
+        👉 Natija:<br>
+        [20, 30] <br><br>
+
+
+
+
+
+        🚀 splice() methodi <br><br>
+
+        🧠 Array ichini o‘zgartiradi <br><br>
+
+        📝 Misol:<br><br>
+
+        let arr = [1, 2, 3, 4];<br><br>
+
+        arr.splice(1, 2);<br><br>
+
+        console.log(arr);<br><br>
+
+        👉 Natija:<br>
+        [1, 4] <br><br>
+
+
+
+
+
+        🚀 join() methodi <br><br>
+
+        📝 Misol:<br><br>
+
+        let words = ["Salom", "Dunyo"];<br><br>
+
+        console.log(words.join(" "));<br><br>
+
+        👉 Natija:<br>
+        Salom Dunyo <br><br>
+
+
+
+
+
+        🚀 split() methodi <br><br>
+
+        🧠 Stringni arrayga aylantiradi <br><br>
+
+        📝 Misol:<br><br>
+
+        let data = "Ali,Vali,Sami";<br><br>
+
+        console.log(data.split(","));<br><br>
+
+        👉 Natija:<br>
+        ["Ali", "Vali", "Sami"] <br><br>
+
+
+
+
+
+        🚀 reverse() methodi <br><br>
+
+        📝 Misol:<br><br>
+
+        let reverseArr = [1, 2, 3];<br><br>
+
+        reverseArr.reverse();<br><br>
+
+        console.log(reverseArr);<br><br>
+
+        👉 Natija:<br>
+        [3, 2, 1] <br><br>
+
+
+
+
+
+        🚀 forEach() methodi <br><br>
+
+        🧠 Har bir elementni aylanish qiladi <br><br>
+
+        📝 Misol:<br><br>
+
+        let numbers = [1, 2, 3];<br><br>
+
+        numbers.forEach(function(item) {<br>
+        &nbsp;&nbsp;console.log(item);<br>
+        });<br><br>
+
+        👉 Natija:<br>
+        1 <br>
+        2 <br>
+        3 <br><br>
+
+
+
+
+
+        🚀 map() methodi <br><br>
+
+        🧠 Yangi array yaratadi <br><br>
+
+        📝 Misol:<br><br>
+
+        let ballar = [10, 20, 30];<br><br>
+
+        let yangi = ballar.map(function(item) {<br>
+        &nbsp;&nbsp;return item * 2;<br>
+        });<br><br>
+
+        console.log(yangi);<br><br>
+
+        👉 Natija:<br>
+        [20, 40, 60] <br><br>
+
+
+
+
+
+        🚀 filter() methodi <br><br>
+
+        🧠 Kerakli elementlarni ajratadi <br><br>
+
+        📝 Misol:<br><br>
+
+        let yoshlar = [12, 18, 25, 15];<br><br>
+
+        let katta = yoshlar.filter(function(item) {<br>
+        &nbsp;&nbsp;return item >= 18;<br>
+        });<br><br>
+
+        console.log(katta);<br><br>
+
+        👉 Natija:<br>
+        [18, 25] <br><br>
+
+
+
+
+
+        🚀 ENG MUHIM XULOSA <br><br>
+
+        👉 Method = object ichidagi function <br>
+        👉 this objectni bildiradi <br>
+        👉 Array va stringda tayyor methodlar bor <br>
+        👉 Methodlar kod yozishni osonlashtiradi <br><br>
+
+
+
+
+
+        🧠 ESDA TUTISH OSON YO‘L <br><br>
+
+        👉 push = oxiriga qo‘shadi <br>
+        👉 pop = oxiridan o‘chiradi <br>
+        👉 shift = boshidan o‘chiradi <br>
+        👉 unshift = boshiga qo‘shadi <br>
+        👉 map = yangi array <br>
+        👉 filter = tanlab oladi <br><br>
+
+
+
+
+
+        🚀 MINI MISOL <br><br>
+
+        let user = {<br>
+        &nbsp;&nbsp;ism: "Ali",<br><br>
+
+        &nbsp;&nbsp;salom() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Salom " + this.ism);<br>
+        &nbsp;&nbsp;}<br>
+        };<br><br>
+
+        user.salom();<br><br>
+
+        👉 Natija:<br>
+        Salom Ali <br>
     </div>
     <div class="main main1" id="m13">
         <div class="loader">
