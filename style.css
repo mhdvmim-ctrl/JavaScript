@@ -10,16 +10,14 @@ html {
 }
 
 body {
-    width: 96%;
-    margin-left: 2%;
-    box-shadow: 0px 0px 5px 5px white;
-    background: linear-gradient(45deg, #011c40, #023859);
+    background: linear-gradient(60deg, #011c40, #023859);
 }
 
 header:hover {
     transition: 1s;
-    background: #023859;
     box-shadow: none;
+    background: linear-gradient(60deg, #011c40, #023859);
+
 
     a {
         color: white;
@@ -30,8 +28,9 @@ header:hover {
 header {
     width: 80%;
     height: 70px;
-    background: #02385998;
     border-radius: 20px;
+    background: linear-gradient(60deg, #011c40a4, #02385993);
+
     position: fixed;
     top: 5%;
     left: 10%;
@@ -141,6 +140,7 @@ header {
     border-radius: 30px;
     transition: 1s;
     color: white;
+    font-size: 20px;
     font-family: sans-serif;
     background: none;
     font-weight: 500;
